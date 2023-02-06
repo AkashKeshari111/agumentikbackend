@@ -2,7 +2,7 @@
 const express=require("express");
 require("dotenv").config();
 const cors=require("cors");
-const  connection  = require("../server/Config/db");
+const  connection  = require("./Config/db");
 const homeRouter=require("./Router/Home.router")
 const adminAuth=require("./Router/Admin.router")
 
