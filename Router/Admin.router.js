@@ -1,7 +1,6 @@
 const { Router } = require("express");
 
 const bcrypt = require("bcrypt");
-const dns = require("node:dns");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv").config();
 var crypto = require("crypto");
