@@ -31,10 +31,7 @@ adminRouter.post("/admin/register", async (req, res) => {
         if (err) {
           return res.status(501).send(err);
         }
-        dns.lookup("augmentik.com", async (err, address, family) => {
-          if (err) {
-            return res.status(501).send(err);
-          }
+      
           const new_adminAuthUser = new AdminModel({
 
             email,
@@ -49,7 +46,7 @@ adminRouter.post("/admin/register", async (req, res) => {
           return res
             .status(201)
             .send({ msg: "Signup Successfully"});
-        });
+       
       });
     } catch (err) {
       return res.status(500).send(err);
